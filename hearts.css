@@ -1,0 +1,131 @@
+body {
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#startDiv {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#selectMessage, #trickStartedMessage {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.scoreTable {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.scoreTable th, .scoreTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.scoreHeader th {
+    background-color: #444;
+    color: white;
+}
+
+#scoreboard {
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.winningMessage {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.card {
+    font-weight: bold;
+    width: 60px;
+    height: 90px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card.selected {
+    background-color: #ffcc00;
+}
+
+.card .rank {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.suitImage {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 16px;
+}
+
+.trickPlay {
+    pointer-events: none;
+    margin-top: 10px;
+    display: inline-grid;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    color: #f30606;
+}
+
+.playerName {
+    margin-top: auto;
+    color: #f30606;
+    font-size: 14px;
+}
+
+#trickCollection {
+    color: #f30606;
+    text-align: center;
+    margin: 10px auto;
+    height: 150px;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    display: table;
+    padding: 10px;
+}
+
+#nameOfUserCards {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
